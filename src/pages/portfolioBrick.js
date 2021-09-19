@@ -1,6 +1,6 @@
 import { ImageList } from "@material-ui/core";
-import { ImageListItemBar, ImageListItem } from "@mui/material";
-const itemData = [];
+import { ImageListItemBar, ImageListItem, ListItemText } from "@mui/material";
+const itemData = require("../seeders/portfolio.js");
 export default function MasonPortfolio() {
   return (
     <ImageList variant="masonry" cols={3} gap={8}>
@@ -13,6 +13,7 @@ export default function MasonPortfolio() {
             loading="lazy"
           />
           <ImageListItemBar position="below" title={item.author} />
+          <ListItemText primary={item.title}></ListItemText>
         </ImageListItem>
       ))}
     </ImageList>
