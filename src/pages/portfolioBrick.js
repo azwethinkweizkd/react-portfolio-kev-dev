@@ -74,7 +74,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 export default function MasonPortfolio() {
   return (
     <Box sx={{ width: "auto", minHeight: 829 }}>
-      <Masonry columns={3} spacing={2}>
+      <Masonry columns={3} spacing={1}>
         <MasonryItem
           key={
             process.env.PUBLIC_URL +

@@ -5,32 +5,25 @@ export default function AboutMe() {
   return (
     <>
       <Typography paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus
-        non enim praesent elementum facilisis leo vel. Risus at ultrices mi
-        tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non
-        tellus. Convallis convallis tellus id interdum velit laoreet id donec
-        ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl
-        suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod
-        quis viverra nibh cras. Metus vulputate eu scelerisque felis imperdiet
-        proin fermentum leo. Mauris commodo quis imperdiet massa tincidunt. Cras
-        tincidunt lobortis feugiat vivamus at augue. At augue eget arcu dictum
-        varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt.
-        Lorem donec massa sapien faucibus et molestie ac.
+        The name is Kevin Devlin, I'm a tireless seeker of knowledge and
+        personal growth, always adventurous human looking for new obsticles to
+        conquer and also, coincidentally, a recent DU Full Stack Web Development
+        Graduate looking for a job in a fresh new career!
       </Typography>
       <Typography paragraph>
-        Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-        ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar elementum
-        integer enim neque volutpat ac tincidunt. Ornare suspendisse sed nisi
-        lacus sed viverra tellus. Purus sit amet volutpat consequat mauris.
-        Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-        vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra
-        accumsan in. In hendrerit gravida rutrum quisque non tellus orci ac.
-        Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique
-        senectus et. Adipiscing elit duis tristique sollicitudin nibh sit.
-        Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra
-        maecenas accumsan lacus vel facilisis. Nulla posuere sollicitudin
-        aliquam ultrices sagittis orci a.
+        I graduated from Floirda Gulf Coast University in 2013 with a Biomedical
+        Engineering Degree, and currently working within the medical device
+        field as a Biomedical Designer at 3D Systems. I've spent 7 years in the
+        3D printing field and designed patient matched medical products for
+        specialized surgery.
+      </Typography>
+      <Typography paragraph>
+        I'm currently searching for a job in the web development field as a
+        React Developer. I've acquired, and will continually sharpen, several
+        skills during the course that may be of interest to your componany. By
+        the end of the course I learned the ins and outs of a full MERN stack
+        for development as you can tell by my final project located on my
+        Portfolio tab named: (Blank)
       </Typography>
     </>
   );
