@@ -9,7 +9,7 @@ export default function ContactMe() {
       <Grid container>
         <Grid item sm={12}>
           <Typography variant="h2" noWrap component="div" textAlign="center">
-            Contact me below
+            Let's Talk!
           </Typography>
           <Divider />
           <Box
@@ -27,30 +27,12 @@ export default function ContactMe() {
               type="search"
               placeholder="Please write your name here"
             />
-          </Box>
-          <Box
-            component="form"
-            sx={{
-              "& .MuiTextField-root": { m: 1, width: "124ch" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
             <TextField
               id="outlined-search"
               label="Email"
               type="search"
               placeholder="Please write your email here"
             />
-          </Box>
-          <Box
-            component="form"
-            sx={{
-              "& .MuiTextField-root": { m: 1, width: "124ch" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
             <TextField
               id="outlined-textarea"
               label="Message"

@@ -1,30 +1,43 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import { Grid, Divider } from "@mui/material";
+const me = process.env.PUBLIC_URL + "/images/professional-photo.jpg";
 
 export default function AboutMe() {
   return (
     <>
-      <Typography paragraph>
-        The name is Kevin Devlin, I'm a tireless seeker of knowledge and
-        personal growth, always adventurous human looking for new obsticles to
-        conquer and also, coincidentally, a recent DU Full Stack Web Development
-        Graduate looking for a job in a fresh new career!
-      </Typography>
-      <Typography paragraph>
-        I graduated from Floirda Gulf Coast University in 2013 with a Biomedical
-        Engineering Degree, and currently working within the medical device
-        field as a Biomedical Designer at 3D Systems. I've spent 7 years in the
-        3D printing field and designed patient matched medical products for
-        specialized surgery.
-      </Typography>
-      <Typography paragraph>
-        I'm currently searching for a job in the web development field as a
-        React Developer. I've acquired, and will continually sharpen, several
-        skills during the course that may be of interest to your componany. By
-        the end of the course I learned the ins and outs of a full MERN stack
-        for development as you can tell by my final project located on my
-        Portfolio tab named: (Blank)
-      </Typography>
+      <Grid
+        container
+        direction="row"
+        justifyContent="flex-start"
+        alignItems="center"
+      >
+        <Grid item xs={12} sm={12} md={4}>
+          <img src={me} alt="Kevin Devlin" className="photo" />
+        </Grid>
+        <Grid item xs={12} sm={12} md={8}>
+          <Typography variant="h1" component="h2" mb={5}>
+            Kevin Devlin
+          </Typography>
+          <Typography paragraph>
+            Full Stack Web Developer with a background in CAD design and 3D
+            Printing manufacturing. Recently earned a certificate in Full Stack
+            Web Development Coding Bootcamp from the University of Denver, with
+            growing aspirations of a fresh career using newly acquired and
+            continuously developed skills in Javascript, jQuery, Node.js,
+            React.js, Express and other coding languages used in responsive web
+            design. During my time, I collaborated on several projects with
+            teammates to deliver a minimal viable project, with the most recent
+            being a MERN stack application. Impassioned by problem solving
+            coding challenges as a project team member to develop new and
+            innovative web applications. I excel in customer-input driven
+            design, organizing teams for effective work-flow, and fulfilling
+            deliverable deadlines of expected products during my professional
+            career in 3D printing medical device manufacturing.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Divider mt={10} />
     </>
   );
 }
