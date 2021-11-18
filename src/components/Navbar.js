@@ -111,7 +111,7 @@ export default function MiniDrawer() {
   };
 
   return (
-    <Router basename="/react-portfolio-kev-dev">
+    <Router basename="/">
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar position="fixed" open={open}>
