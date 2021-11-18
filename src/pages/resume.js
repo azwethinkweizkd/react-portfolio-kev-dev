@@ -12,8 +12,7 @@ import {
   faBootstrap,
   faNpm,
 } from "@fortawesome/free-brands-svg-icons";
-
-const mongoDbIcon = process.env.PUBLIC_URL + "/images/mysql.svg";
+import JQueryIcon from "../utils/jQueryIcon";
 
 export default function Resume() {
   return (
@@ -47,7 +46,7 @@ export default function Resume() {
         mt="10"
       >
         <Grid item>
-          <FontAwesomeIcon icon={faSass} className="hover:" size="10x" />
+          <FontAwesomeIcon icon={faSass} size="10x" />
         </Grid>
         <Grid item>
           <FontAwesomeIcon icon={faCss3} size="10x" />
@@ -71,7 +70,7 @@ export default function Resume() {
           <FontAwesomeIcon icon={faNpm} size="10x" />
         </Grid>
         <Grid item>
-          <FontAwesomeIcon icon={mongoDbIcon} size="10x" />
+          <JQueryIcon />
         </Grid>
       </Grid>
     </>

@@ -194,7 +194,8 @@ export default function MiniDrawer() {
           <List>
             <a
               href="https://github.com/azwethinkweizkd"
-              rel="noopener"
+              target="_blank"
+              rel="noreferrer noopener"
               style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
             >
               <ListItem button>
@@ -206,7 +207,8 @@ export default function MiniDrawer() {
             </a>
             <a
               href="https://www.linkedin.com/in/kevin-devlin-b67b3a7a/"
-              rel="noopener"
+              target="_blank"
+              rel="noreferrer noopener"
               style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
             >
               <ListItem button>
