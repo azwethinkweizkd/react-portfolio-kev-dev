@@ -7,6 +7,14 @@
   width: 400px;
 }
 
+#resumeLink:active {
+  color: #1976d2;
+}
+
+#resumeLink:visited {
+  color: maroon;
+}
+
 @media screen and (max-width: 1372px) {
   .photo {
     height: 275px;
