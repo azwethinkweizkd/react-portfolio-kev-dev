@@ -13,7 +13,7 @@ import {
   faNpm,
 } from "@fortawesome/free-brands-svg-icons";
 import JQueryIcon from "../utils/jQueryIcon";
-import resume from "../utils/Kevin Devlin Web Development Resume.pdf";
+import resume from "../utils/Kevin-Devlin-Web-Development-Resume.pdf";
 // import { Document, Page, pdfjs } from "react-pdf";
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
