@@ -29,34 +29,31 @@ export default function Resume() {
         mt="10px"
       >
         <Grid item>
-          <FontAwesomeIcon icon={faHtml5} className="hover:" size="10x" />
+          <FontAwesomeIcon
+            icon={faHtml5}
+            className="icon"
+            style={{ color: "rgb(228, 77, 38)", order: 1 }}
+            size="10x"
+          />
         </Grid>
         <Grid item>
           <JQueryIcon />
         </Grid>
         <Grid item>
-          <FontAwesomeIcon icon={faJsSquare} size="10x" />
+          <FontAwesomeIcon
+            icon={faJsSquare}
+            style={{ color: "rgb(240, 219, 79)", order: 3 }}
+            className="icon"
+            size="10x"
+          />
         </Grid>
         <Grid item>
-          <FontAwesomeIcon icon={faNodeJs} size="10x" />
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
-        size="5x"
-        mt="10"
-      >
-        <Grid item>
-          <FontAwesomeIcon icon={faSass} size="10x" />
-        </Grid>
-        <Grid item>
-          <FontAwesomeIcon icon={faCss3} size="10x" />
-        </Grid>
-        <Grid item>
-          <FontAwesomeIcon icon={faBootstrap} size="10x" />
+          <FontAwesomeIcon
+            icon={faNodeJs}
+            style={{ color: "rgb(131, 205, 41)", order: 4 }}
+            className="icon"
+            size="10x"
+          />
         </Grid>
       </Grid>
       <Grid
@@ -65,10 +62,49 @@ export default function Resume() {
         justifyContent="space-evenly"
         alignItems="center"
         size="5x"
-        mt="10"
+        mt="10px"
       >
         <Grid item>
-          <FontAwesomeIcon icon={faGithubSquare} size="10x" />
+          <FontAwesomeIcon
+            icon={faSass}
+            style={{ color: "rgb(203, 102, 153)", order: 5 }}
+            className="icon"
+            size="10x"
+          />
+        </Grid>
+        <Grid item>
+          <FontAwesomeIcon
+            icon={faCss3}
+            style={{ color: "rgb(21, 114, 182)", order: 6 }}
+            className="icon"
+            size="10x"
+          />
+        </Grid>
+        <Grid item>
+          <FontAwesomeIcon
+            icon={faBootstrap}
+            style={{ color: "#9933CC", order: 7 }}
+            className="icon"
+            size="10x"
+          />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
+        size="5x"
+        mt="10px"
+        mb="10px"
+      >
+        <Grid item>
+          <FontAwesomeIcon
+            icon={faGithubSquare}
+            style={{ color: "rgb(243, 79, 41)", order: 8 }}
+            className="icon"
+            size="10x"
+          />
         </Grid>
         <Grid item>
           <MySqlIcon />
@@ -77,19 +113,15 @@ export default function Resume() {
           <MongoDbIcon />
         </Grid>
         <Grid item>
-          <FontAwesomeIcon icon={faReact} size="10x" />
+          <FontAwesomeIcon
+            icon={faReact}
+            style={{ color: "rgb(97, 218, 251)", order: 11 }}
+            className="icon"
+            size="10x"
+          />
         </Grid>
       </Grid>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
-        size="5x"
-        mt="10"
-        mb="15px"
-      ></Grid>
-      <Divider />
+      <Divider mt="5" className="fade-in" />
       <Typography variant="h4" mt="15px">
         <a
           id="resumeLink"
@@ -97,6 +129,7 @@ export default function Resume() {
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: "none" }}
+          className="fade-in"
         >
           Download Resume
         </a>

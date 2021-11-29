@@ -15,6 +15,79 @@
   color: maroon;
 }
 
+.customSVG {
+  fill: currentColor;
+}
+
+.icon {
+  padding: 0.6rem;
+  filter: brightness(0) invert(0.4);
+}
+.icon:hover {
+  filter: brightness(1) invert(0);
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    opacity: 0;
+    animation: dropIn 8s ease forwards;
+    animation-delay: calc(var(--order) * 200ms);
+  }
+  @keyframes dropIn {
+    10% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    20%,
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    animation-duration: 0.5s;
+
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+}
+
 @media screen and (max-width: 1372px) {
   .photo {
     height: 275px;
