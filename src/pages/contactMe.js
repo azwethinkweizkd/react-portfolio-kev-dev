@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import validator from "validator";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Grid, Typography, Divider, Button } from "@mui/material";
@@ -8,17 +9,18 @@ export default function ContactMe() {
   // const [nameInput, setNameText] = useState("");
   // const [emailInput, setEmailText] = useState("");
   // const [msgInput, setMsgText] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const validateEmail = (e) => {
+    var email = e.target.value;
 
+    if (validator.isEmail(email)) {
+      setEmailError("Email Accepted ✓");
+    } else {
+      setEmailError("Please enter a valid email");
+    }
+  };
   const handleEmailSend = async (event) => {
     event.preventDefault();
-    console.log(event.target);
-    // const emailItems = {
-    //   nameInput: nameInput,
-    //   emailInput: emailInput,
-    //   msgInput: msgInput,
-    // };
-
-    // console.log(emailItems);
 
     emailjs
       .sendForm(
@@ -67,6 +69,8 @@ export default function ContactMe() {
                 type="search"
                 placeholder="Please write your email here"
                 name="emailInput"
+                onChange={(e) => validateEmail(e)}
+                helperText={emailError}
               />
               <TextField
                 id="outlined-textarea"
@@ -76,6 +80,7 @@ export default function ContactMe() {
                 minRows={12}
                 justifyContent="flex-start"
                 name="msgInput"
+                marginTop="10px"
               />
             </Box>
             <Button
