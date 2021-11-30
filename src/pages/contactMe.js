@@ -3,12 +3,12 @@ import validator from "validator";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Grid, Typography, Divider, Button } from "@mui/material";
+// import LocationCityRoundedIcon from "@mui/icons-material/LocationCityRounded";
+// import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
+// import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import emailjs from "emailjs-com";
 
 export default function ContactMe() {
-  // const [nameInput, setNameText] = useState("");
-  // const [emailInput, setEmailText] = useState("");
-  // const [msgInput, setMsgText] = useState("");
   const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
     var email = e.target.value;
@@ -45,6 +45,7 @@ export default function ContactMe() {
             Let's Talk!
           </Typography>
           <Divider />
+
           <Box
             component="form"
             sx={{
