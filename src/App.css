@@ -31,7 +31,7 @@
   .icon {
     opacity: 0;
     animation: dropIn 8s ease forwards;
-    animation-delay: calc(var(--order) * 200ms);
+    /* animation-delay: calc(var(--order) * 200ms); */
   }
   @keyframes dropIn {
     10% {
